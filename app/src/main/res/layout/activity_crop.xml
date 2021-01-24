@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.abhi_g.abseeds.signup">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/bgj"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Abdullah Seeds and Fertilizers"
+                android:textColor="@color/colorPrimary"
+                android:textSize="24dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="top|center"
+                android:orientation="vertical"
+                android:paddingLeft="30dp"
+                android:paddingRight="20dp"
+                android:paddingTop="10dp"
+                android:weightSum="1"
+                android:paddingBottom="10dp"
+                android:layout_marginTop="0dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_constraintLeft_creator="1"
+                tools:layout_constraintTop_creator="1">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:gravity="center"
+                    android:text="فصل کے سروے کا اندراج"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="23dp"
+                    android:textStyle="bold"
+                    tools:layout_editor_absoluteX="8dp"
+                    tools:layout_editor_absoluteY="8dp" />
+                <EditText
+                    android:id="@+id/id"
+                    android:hint="فیلڈ اسیسٹنٹ نمبر"
+                    android:padding="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="43dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:textColor="@android:color/black"
+                    tools:layout_editor_absoluteX="63dp"
+                    tools:layout_editor_absoluteY="140dp"/>
+                <EditText
+                    android:id="@+id/cropname"
+                    android:padding="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="43dp"
+                    android:ems="10"
+                    android:hint="فصل کا نام "
+                    android:inputType="textPersonName"
+                    android:textColor="@android:color/black"
+                    tools:layout_editor_absoluteX="63dp"
+                    tools:layout_editor_absoluteY="140dp" />
+
+                <EditText
+                    android:id="@+id/murabanumber"
+                    android:padding="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:ems="10"
+                    android:hint="مربہ نمبر"
+                    android:inputType="textPersonName"
+                    android:textColor="@android:color/black"
+                    tools:layout_editor_absoluteX="65dp"
+                    tools:layout_editor_absoluteY="203dp" />
+
+                <EditText
+                    android:id="@+id/address"
+                    android:padding="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:ems="10"
+                    android:hint="پتہ"
+                    android:inputType="textPersonName"
+                    android:textColor="@android:color/black"
+                    tools:layout_editor_absoluteX="65dp"
+                    tools:layout_editor_absoluteY="203dp" />
+
+                <EditText
+                    android:id="@+id/srwaydate"
+                    android:padding="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:ems="10"
+                    android:hint="سروے تاریخ"
+                    android:inputType="date"
+                    android:textColor="@android:color/black"
+                    tools:layout_editor_absoluteX="65dp"
+                    tools:layout_editor_absoluteY="203dp" />
+
+                <TextView
+                    android:id="@+id/metingt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="وضاحت:"
+                    android:textColor="@android:color/black"
+                    android:textSize="15dp"
+                    tools:layout_editor_absoluteX="65dp"
+                    tools:layout_editor_absoluteY="203dp" />
+
+                <EditText
+                    android:id="@+id/meting"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.23"
+                    android:ems="10"
+                    android:inputType="textMultiLine"
+                    tools:layout_editor_absoluteX="76dp"
+                    tools:layout_editor_absoluteY="400dp" />
+
+                <Button
+                    android:id="@+id/imgbtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_margin="10dp"
+                    android:background="#d546ba"
+                    android:text="تصویر"
+                    android:textSize="20dp" />
+
+                <ImageView
+                    android:id="@+id/imgview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/send"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="#782c6d"
+                    android:drawableLeft="@drawable/ic_upload_24dp"
+                    android:drawablePadding="10dp"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="UPLOAD"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

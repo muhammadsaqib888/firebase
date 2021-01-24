@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.abhi_g.abseeds.Home">
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/bgj"
+        android:gravity="top"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/mybutton"
+            android:gravity="center"
+            android:orientation="horizontal"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="-3dp">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="80dp"
+                android:layout_height="60dp"
+                android:background="@drawable/ablogo"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="-1dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Abdullah Seeds And Fertilizers"
+                android:textColor="@android:color/holo_blue_dark"
+                android:textSize="20dp" />
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="top|center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="95dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:gravity="left"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+                        <ImageButton
+                            android:id="@+id/farmeri"
+                            android:layout_width="115dp"
+                            android:layout_height="120dp"
+                            android:elevation="21dp"
+                            android:scaleType="fitXY"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintHorizontal_bias="0.142"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.319"
+                            app:srcCompat="@drawable/farmer" />
+
+                        <TextView
+                            android:id="@+id/farmer"
+                            android:layout_width="117dp"
+                            android:layout_height="wrap_content"
+                            android:text="کسان میٹنگ"
+                            android:textAlignment="center"
+                            android:textColor="@android:color/black"
+                            android:textSize="22sp"
+                            android:textStyle="bold|italic"
+                            android:typeface="monospace"
+                            tools:layout_editor_absoluteX="37dp"
+                            tools:layout_editor_absoluteY="269dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:gravity="right"
+                        android:orientation="vertical"
+                        android:padding="0dp">
+
+                        <ImageButton
+                            android:id="@+id/srwayi"
+                            android:layout_width="115dp"
+                            android:layout_height="120dp"
+                            android:elevation="21dp"
+                            android:scaleType="fitXY"
+                            app:srcCompat="@drawable/fild"
+                            tools:layout_editor_absoluteX="212dp"
+                            tools:layout_editor_absoluteY="143dp" />
+
+                        <TextView
+                            android:id="@+id/srway"
+                            android:layout_width="117dp"
+                            android:layout_height="wrap_content"
+                            android:text="زمین سروے"
+                            android:textAlignment="center"
+                            android:textColor="@android:color/black"
+                            android:textSize="23sp"
+                            android:textStyle="bold|italic"
+                            android:typeface="monospace"
+                            tools:layout_editor_absoluteX="212dp"
+                            tools:layout_editor_absoluteY="269dp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:gravity="left"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+                        <ImageButton
+                            android:id="@+id/seedi"
+                            android:layout_width="115dp"
+                            android:layout_height="120dp"
+                            android:elevation="21dp"
+                            android:scaleType="fitXY"
+                            app:srcCompat="@drawable/seeds"
+                            tools:layout_editor_absoluteX="37dp"
+                            tools:layout_editor_absoluteY="312dp" />
+
+                        <TextView
+                            android:id="@+id/seed"
+                            android:layout_width="117dp"
+                            android:layout_height="wrap_content"
+                            android:text="بیج اور کھاد"
+                            android:textAlignment="center"
+                            android:textColor="@android:color/black"
+                            android:textSize="20sp"
+                            android:textStyle="bold|italic"
+                            android:typeface="monospace"
+                            tools:layout_editor_absoluteX="36dp"
+                            tools:layout_editor_absoluteY="442dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:gravity="right"
+                        android:orientation="vertical"
+                        android:padding="0dp">
+
+                        <ImageButton
+                            android:id="@+id/cropi"
+                            android:layout_width="115dp"
+                            android:layout_height="120dp"
+                            android:elevation="21dp"
+                            android:scaleType="fitXY"
+                            app:srcCompat="@drawable/serway"
+                            tools:layout_editor_absoluteX="212dp"
+                            tools:layout_editor_absoluteY="312dp" />
+
+                        <TextView
+                            android:id="@+id/crop"
+                            android:layout_width="117dp"
+                            android:layout_height="wrap_content"
+                            android:text="فصل سروے"
+                            android:textAlignment="center"
+                            android:textColor="@android:color/black"
+                            android:textSize="22sp"
+                            android:textStyle="bold|italic"
+                            android:typeface="monospace"
+                            tools:layout_editor_absoluteX="212dp"
+                            tools:layout_editor_absoluteY="442dp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/logout"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="46dp"
+                    android:layout_marginRight="45dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/mybutton"
+                    android:elevation="19dp"
+                    android:text="Logout"
+                    android:textStyle="bold"
+                    android:textColor="#ffff"/>
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
